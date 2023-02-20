@@ -1,5 +1,3 @@
-<!--Store this code in 'display.html' file inside the 'templates' folder-->
-
 <html lang="en">
 	<head>
 		<title>display</title>
@@ -8,7 +6,7 @@
 	<body bgcolor="#e6ffee">
 		<div class="one">
 			<div class="two">
-				<h1>Side Bar</h1>
+				<h1>Dash Board</h1>
 				<ul>
 					<li><a href="{{url_for('index')}}">Index</a></li>
 					<li class="active"><a href="{{url_for('display')}}">Display</a></li>
@@ -34,33 +32,77 @@
 									<td>{{ account['password'] }}</td>
 								</tr>
 								<tr>
-									<td>Email ID:</td>
-									<td>{{ account['email'] }}</td>
+									<td>Energy:</td>
+									<td>{{ account['Energy'] }}</td>
 								</tr>
 								<tr>
-									<td>Organisation:</td>
-									<td>{{ account['organisation'] }}</td>
+									<td>Total_lipid:</td>
+									<td>{{ account['Total_lipid'] }}</td>
 								</tr>
 								<tr>
-									<td>Address:</td>
-									<td>{{ account['address'] }}</td>
+									<td>Fatty_acids	:</td>
+									<td>{{ account['Fatty_acids'] }}</td>
 								</tr>
 								<tr>
-									<td>City:</td>
-									<td>{{ account['city'] }}</td>
+									<td>Carbohydrate:</td>
+									<td>{{ account['Carbohydrate'] }}</td>
 								</tr>
 								<tr>
-									<td>State:</td>
-									<td>{{ account['state'] }}</td>
+									<td>Fiber:</td>
+									<td>{{ account['Fiber'] }}</td>
 								</tr>
 								<tr>
-									<td>Country:</td>
-									<td>{{ account['country'] }}</td>
+									<td>Protein	:</td>
+									<td>{{ account['Protein'] }}</td>
 								</tr>
 								<tr>
-									<td>Postal code:</td>
-									<td>{{ account['postalcode'] }}</td>
-								</tr>						
+									<td>Sugars:</td>
+									<td>{{ account['Sugars'] }}</td>
+								</tr>	
+								<tr>
+									<td>Cholesterol:</td>
+									<td>{{ account['Cholesterol'] }}</td>
+								</tr>
+								<tr>
+									<td>Sodium:</td>
+									<td>{{ account['Sodium'] }}</td>
+								</tr>
+								<tr>
+									<td>Magnesium:</td>
+									<td>{{ account['Magnesium'] }}</td>
+								</tr>
+								<tr>
+									<td>Potassium:</td>
+									<td>{{ account['Potassium'] }}</td>
+								</tr>
+								<tr>
+									<td>Iron:</td>
+									<td>{{ account['Iron'] }}</td>
+								</tr>
+								<tr>
+									<td>Zinc:</td>
+									<td>{{ account['Zinc'] }}</td>
+								</tr>
+								<tr>
+									<td>Phosphorus:</td>
+									<td>{{ account['Phosphorus'] }}</td>
+								</tr>
+								<tr>
+									<td>Vitamin_A:</td>
+									<td>{{ account['Vitamin_A'] }}</td>
+								</tr>
+								<tr>
+									<td>Vitamin_C:</td>
+									<td>{{ account['Vitamin_C'] }}</td>
+								</tr>
+								<tr>
+									<td>Thiamin:</td>
+									<td>{{ account['Thiamin'] }}</td>
+								</tr>
+								<tr>
+									<td>Food Items:</td>
+									<td>{{ account['Folate'] }}</td>
+								</tr>				
 							</table>
 						</div>
 					{% endblock %}										

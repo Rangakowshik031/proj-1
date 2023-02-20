@@ -20,10 +20,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Nutrition</a>
-                <a href="#" class="nav-item nav-link"></a>
-                <a href="#" class="nav-item nav-link disabled" tabindex="-1">About Panace.ai</a>
+                <a href="{{url_for('process1')}}" class="nav-item nav-link active">Nutrition value for selected food item</a>
+                <a href="{{url_for('display')}}" class="nav-item nav-link">Display Nutrition Value</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="#" class="nav-item nav-link">About Us</a>
@@ -42,9 +40,6 @@
 <hr>
 {% endfor %} 
 </ul> 
-
-
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 <script>
   function func(a)
@@ -57,8 +52,7 @@
             dataType:'json',
             url:'http://127.0.0.1:5000/process?value='+a,
             data: JSON.stringify(a)});
-    var new1= "http://127.0.0.1:5000/process1"
-    window.location.replace(new1);
+            alert("Added to the database " +a);
 
   }
 </script>
